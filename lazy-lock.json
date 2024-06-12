@@ -1,15 +1,21 @@
 {
   "lazy.nvim": { "branch": "main", "commit": "eb4957442e3182f051b0ae11da32e06d22c190e3" },
   "lualine.nvim": { "branch": "master", "commit": "0a5a66803c7407767b799067986b4dc3036e1983" },
+  "mason-lspconfig.nvim": { "branch": "main", "commit": "8db12610bcb7ce67013cfdfaba4dd47a23c6e851" },
+  "mason.nvim": { "branch": "main", "commit": "0950b15060067f752fde13a779a994f59516ce3d" },
   "neo-tree.nvim": { "branch": "v3.x", "commit": "29f7c215332ba95e470811c380ddbce2cebe2af4" },
   "nord.nvim": { "branch": "master", "commit": "80c1e5321505aeb22b7a9f23eb82f1e193c12470" },
   "nui.nvim": { "branch": "main", "commit": "322978c734866996274467de084a95e4f9b5e0b1" },
   "nvim-autopairs": { "branch": "master", "commit": "c15de7e7981f1111642e7e53799e1211d4606cb9" },
+  "nvim-lspconfig": { "branch": "master", "commit": "4d38bece98300e3e5cd24a9aa0d0ebfea4951c16" },
   "nvim-surround": { "branch": "main", "commit": "687ea2f33955df0042bf228853a82696265e7e2d" },
-  "nvim-treesitter": { "branch": "master", "commit": "9a7ad2ff7a7ea81016aca2fc89c9b2c1a5365421" },
+  "nvim-treesitter": { "branch": "master", "commit": "f29c2d9867004151f9417f2f19b068fb973c29cc" },
   "nvim-treesitter-endwise": { "branch": "master", "commit": "8b34305ffc28bd75a22f5a0a9928ee726a85c9a6" },
   "nvim-web-devicons": { "branch": "master", "commit": "c0cfc1738361b5da1cd0a962dd6f774cc444f856" },
   "plenary.nvim": { "branch": "master", "commit": "a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683" },
+  "telescope-ui-select.nvim": { "branch": "master", "commit": "6e51d7da30bd139a6950adf2a47fda6df9fa06d2" },
   "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" },
-  "vim-rails": { "branch": "master", "commit": "8972461e64c7c4bf049f2f86ea1bc571e8077b55" }
+  "vim-rails": { "branch": "master", "commit": "8972461e64c7c4bf049f2f86ea1bc571e8077b55" },
+  "vim-tmux-navigator": { "branch": "master", "commit": "5b3c701686fb4e6629c100ed32e827edf8dad01e" },
+  "which-key.nvim": { "branch": "main", "commit": "0099511294f16b81c696004fa6a403b0ae61f7a0" }
 }

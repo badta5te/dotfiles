@@ -4,7 +4,7 @@ return {
   {
     "windwp/nvim-autopairs",
     event = "InsertEnter",
-    opts = {},
+    config = true
   },
   {
     "kylechui/nvim-surround",
@@ -15,5 +15,8 @@ return {
         -- Configuration here, or leave empty to use defaults
       })
     end,
+  },
+  {
+    "christoomey/vim-tmux-navigator"
   }
 }
