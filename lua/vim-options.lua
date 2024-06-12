@@ -5,8 +5,8 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set number")
 vim.cmd("set clipboard+=unnamedplus")
 vim.g.mapleader = " "
-vim.keymap.set('i', 'jk', '<ESC>', { desc = 'Exit insert mode with jk' })
-vim.keymap.set('n', '<leader>nh', ":nohl<CR>", { desc = 'Clear search highlights' })
+vim.keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+vim.keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- window management
 vim.keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
