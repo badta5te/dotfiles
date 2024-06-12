@@ -21,7 +21,7 @@ return {
 			lspconfig.tsserver.setup({})
 			lspconfig.eslint.setup({})
 			lspconfig.html.setup({})
-			lspconfig.solargraph.setup({})
+			-- lspconfig.solargraph.setup({})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Get description" })
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Go to definition" })
