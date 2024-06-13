@@ -28,6 +28,11 @@ return {
 			})
 			lspconfig.solargraph.setup({
 				capabilities = capabilities,
+				settings = {
+					solargraph = {
+						diagnostics = false,
+					},
+				},
 			})
 			lspconfig.html.setup({
 				capabilities = capabilities,
