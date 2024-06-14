@@ -4,6 +4,7 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set number")
 vim.cmd("set clipboard+=unnamedplus")
+vim.cmd("set termguicolors")
 vim.g.mapleader = " "
 vim.keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 vim.keymap.set("n", "<leader>nh", "<cmd>nohl<CR>", { desc = "Clear search highlights" })
