@@ -6,25 +6,30 @@ return {
 
 		conform.setup({
 			formatters_by_ft = {
-				javascript = { "prettier" },
-				typescript = { "prettier" },
-				javascriptreact = { "prettier" },
-				typescriptreact = { "prettier" },
-				css = { "prettier" },
-				html = { "prettier" },
-				json = { "prettier" },
-				yaml = { "prettier" },
-				markdown = { "prettier" },
-				graphql = { "prettier" },
-				liquid = { "prettier" },
+				javascript = { "eslint_d" },
+				typescript = { "eslint_d" },
+				javascriptreact = { "eslint_d" },
+				typescriptreact = { "eslint_d" },
+				css = { "prettierd" },
+				html = { "prettierd" },
+				json = { "prettierd" },
+				yaml = { "prettierd" },
+				markdown = { "prettierd" },
+				graphql = { "prettierd" },
+				liquid = { "prettierd" },
 				lua = { "stylua" },
-				ruby = { "rubocop" },
+				ruby = { "rubocop", "solargraph" },
 			},
 			-- format_on_save = {
 			--   lsp_fallback = true,
 			--   async = false,
 			--   timeout_ms = 1000,
 			-- },
+			formatters = {
+				rubocop = {
+					args = { "--server", "--auto-correct-all", "--stderr", "--force-exclusion", "--stdin", "$FILENAME" },
+				},
+			},
 		})
 
 		vim.keymap.set({ "n", "v" }, "<leader>gf", function()
