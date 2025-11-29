@@ -70,3 +70,6 @@ export PATH="/Applications/RubyMine.app/Contents/MacOS:$PATH"
 
 # Added by Antigravity
 export PATH="/Users/badta5te/.antigravity/antigravity/bin:$PATH"
+
+# completions for eza
+export FPATH="/opt/homebrew/bin/eza/completions/zsh:$FPATH"
