@@ -45,6 +45,7 @@ alias c='clear'
 alias lg='lazygit'
 alias ld='lazydocker'
 alias ls='eza'
+alias ai='claude'
 
 source /Users/badta5te/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -53,6 +54,9 @@ eval "$(op completion zsh)"; compdef _op op
 
 # for brew python@3.10
 export PATH="/usr/local/opt/python@3.10/bin:$PATH"
+
+# for postgresql@17
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 
 #for zoxide
 eval "$(zoxide init zsh)"
@@ -67,9 +71,6 @@ eval "$(mise activate zsh)"
 
 # for rubymine
 export PATH="/Applications/RubyMine.app/Contents/MacOS:$PATH"
-
-# Added by Antigravity
-export PATH="/Users/badta5te/.antigravity/antigravity/bin:$PATH"
 
 # completions for eza
 export FPATH="/opt/homebrew/bin/eza/completions/zsh:$FPATH"
