@@ -45,7 +45,13 @@ alias c='clear'
 alias lg='lazygit'
 alias ld='lazydocker'
 alias ls='eza'
-alias ai='claude'
+
+ai() {
+  case "$1" in
+    sonnet|opus|fable|haiku) claude --model "$1" "${@:2}" ;;
+    *) claude "$@" ;;
+  esac
+}
 
 source /Users/badta5te/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
