@@ -1,0 +1,72 @@
+[user]
+	name = Pavel Mikhailov
+	email = badta5te@hey.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILtG/D0O5Y6xQfWSn9pNm7iwig+ztloKHnMHFzs2tWyc
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[core]
+	autocrlf = input
+	safecrlf = true
+	quotepath = off
+	editor = nvim
+	excludesfile = ~/.gitignore_global
+[credential]
+  helper = osxkeychain
+[color]
+  ui = true
+[init]
+  defaultBranch = master
+[log]
+  date = relative
+
+[format]
+  pretty = format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s
+
+[alias]
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  lg = log --abbrev-commit --graph --decorate
+
+[fetch]
+	prune = true
+
+[diff "rails_credentials"]
+	textconv = bin/rails credentials:diff
+
+[diff "lockb"]
+	textconv = bun
+	binary = true
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
+	verbose = true
+[push]
+	default = current
+	autoSetupRemote = true
+[pull]
+	ff = only
+[rebase]
+	autoStash = true
+	autosquash = true
+	updateRefs = true
+[credential "https://git.heroku.com"]
+	helper = !heroku git:credentials
+[rerere]
+	enabled = true
+	autoupdate = true
+[merge]
+	conflictstyle = zdiff3
+[diff]
+	colorMoved = default
+[branch]
+	sort = -committerdate
+[help]
+	autocorrect = prompt

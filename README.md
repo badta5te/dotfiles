@@ -29,7 +29,12 @@ repo is cloned to `~/dotfiles` and stowed into `~`, so `~/.zshrc`,
    ```
    cd ~/dotfiles && stow -t ~ .
    ```
-7. Open a new terminal (picks up `.zshrc`) and `nvim` (Lazy will sync
+7. Install the languages and language tooling declared in
+   `.config/mise/config.toml` (node, ruby, rubocop, gopls, npm packages):
+   ```
+   mise install
+   ```
+8. Open a new terminal (picks up `.zshrc`) and `nvim` (Lazy will sync
    plugins on first launch).
 
 ## Manual steps (can't be scripted)
@@ -38,6 +43,12 @@ repo is cloned to `~/dotfiles` and stowed into `~`, so `~/.zshrc`,
   Settings, then it picks up `~/.config/karabiner/karabiner.json` on its own.
 - **1Password**: sign in; `op` CLI auth follows from the desktop app.
 - Sign in to whatever else needs it: GitHub CLI (`gh auth login`), Heroku, etc.
+
+## What lives where
+
+- **Homebrew** (`Brewfile`) — apps, casks and standalone CLI tools.
+- **mise** (`.config/mise/config.toml`) — language runtimes and anything
+  installed *through* a language: `gem:`, `npm:`, `go:`.
 
 ## Updating the Brewfile snapshot
 
